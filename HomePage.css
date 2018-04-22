@@ -1,5 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
+/*
 body{
 	background-color:antiquewhite;
 	background-image: url(images/HallwylfjelletSunset_ZH-CN9300910376_1920x1080.jpg);
@@ -7,16 +8,43 @@ body{
 	background-attachment: fixed;
 	background-position:top;
 }
-a:link,a:visited{
-	text-align: center;
-	text-decoration: none;
-	/*text-shadow: 0 0 6px #0000FF;*/
-	font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
-	background-color: aqua;
-}
-a:hover,a:active
+*/
+*
 {
-	font-size: 150%;
-	background-color: yellow;
+	box-sizing: border-box;
+}
+body
+{
+	margin:0px;
+	background-color: antiquewhite;
+}
+.topmenu
+{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	background-color:dimgray;
+}
+.topmenu li
+{
+	float:left;
+}
+.topmenu li a
+{
+	display: inline-block;
+	color: aliceblue;
+	text-align: center;
+	padding: 16px;
+	text-decoration: none;
+}
+.topmenu li a:link,a:visited
+{
+	background-color: dodgerblue;
+}
+.topmenu li a:hover,a:active
+{
+/*	font-size: 150%;*/
+	background-color:black;
 }
 
