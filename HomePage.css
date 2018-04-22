@@ -1,3 +1,22 @@
 @charset "utf-8";
 /* CSS Document */
-body{background-color:azure}
+body{
+	background-color:antiquewhite;
+	background-image: url(images/HallwylfjelletSunset_ZH-CN9300910376_1920x1080.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position:top;
+}
+a:link,a:visited{
+	text-align: center;
+	text-decoration: none;
+	/*text-shadow: 0 0 6px #0000FF;*/
+	font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	background-color: aqua;
+}
+a:hover,a:active
+{
+	font-size: 150%;
+	background-color: yellow;
+}
+
