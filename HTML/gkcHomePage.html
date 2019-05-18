@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>高克臣的个人网站</title>
+    <style>
+        /* 导航相关 */
+        nav {
+            /* 在左右两侧均不允许有浮动元素 */
+            clear: both;
+        }
+
+        nav ul {
+            list-style: none;
+            background-color: white;
+            height: 30px;
+            padding-left: 0;
+            color: deepskyblue;
+        }
+
+        nav ul li {
+            width: 80px;
+            float: left;
+            line-height: 30px;
+            text-align: center;
+        }
+
+        nav ul li a {
+            color: black;
+            /* 用于设置文本排版（下划线、顶划线、删除线或者闪烁）。下划线和顶划线修饰于文本的下部，删除线位于文本之上。 */
+            text-decoration: none;
+        }
+
+        #left {
+            width: 700px;
+            float: left;
+        }
+
+        #right {
+            width: 300px;
+            float: left;
+        }
+
+        /* #left section:nth-child(1) img{
+            width: 680px;
+            height: 300px;
+        } */
+
+        /* 左侧下部 */
+        #bottom header {
+            padding: 10px;
+        }
+
+        #bottom figure {
+            width: 640px;
+            height: 150px;
+        }
+
+        #bottom figure img {
+            clear: both;
+            width: 200px;
+            height: 150px;
+            float: left;
+            margin-left: -20px;
+            margin-right: 10px;
+        }
+
+        #bottom figure figcaption {
+            width: 400px;
+            height: 150px;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 头部标题区域 -->
+    <header>
+        <!-- <img src="../style/images/logo.png" alt="高克臣的个人网站"> -->
+        <h1>
+            <span>高克臣的个人网站</span>
+        </h1>
+        <p>欢迎光临高克臣的个人网站</p>
+    </header>
+    <!-- 导航菜单 -->
+    <nav>
+        <ul>
+            <li><a href="gkcHomePage.html">首页</a></li>
+            <li><a href="gkcPhoto.html">相册</a></li>
+            <li><a href="gkcVideo.html">视频</a></li>
+            <li><a href="gkcAbout.html">关于</a></li>
+        </ul>
+    </nav>
+    <div id="mainContent">
+        <div id="left">
+            <!-- 表示文档中的一个区域（或节）。比如章节、页眉、页脚或文档中的其他部分，一般来说会包含一个标题 -->
+            <section id="bottom">
+                <!-- figure元素规定独立的流内容（图像、图表、照片、代码等等）内容应该与主内容相关，但如果被删除，则不应对文档流产生影响-->
+                <figure>
+                    <a href="gkcGitHubPages.html"><img src="" alt="免费搭建个人博客"></a>
+                    <figcaption>
+                        <h3><a href="gkcGitHubPages.html" target="_blank" title="使用GitHubPages免费搭建个人博客">使用GitHub
+                                Pages免费搭建个人博客</a></h3>
+                        <p>今天这篇文章教大家如何通过GitHub Pages来免费搭建个人博客
+                            GitHub Pages是一种静态站点托管服务，不支持服务器端代码，如PHP，Ruby或Python。</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <a href="#"><img src="" alt="免费搭建个人博客"></a>
+                    <figcaption>
+                        <h3><a href="gkcGitHubPages.html" target="_blank" title="使用GitHubPages免费搭建个人博客">使用GitHub
+                                Pages免费搭建个人博客</a></h3>
+                        <p>今天这篇文章教大家如何通过GitHub Pages来免费搭建个人博客
+                            GitHub Pages是一种静态站点托管服务，不支持服务器端代码，如PHP，Ruby或Python。</p>
+                    </figcaption>
+                </figure>
+            </section>
+
+        </div>
+        <div id="right">
+            <!-- 右边栏实现标签部分 -->
+            <aside>
+
+            </aside>
+        </div>
+    </div>
+    <!-- 页面底部 -->
+    <footer>
+        <p>软件1601 高克臣 20167457 2019-5-15 17852021881</p>
+    </footer>
+</body>
+
+</html>
