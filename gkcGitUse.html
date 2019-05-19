@@ -39,12 +39,14 @@
         }
 
         article {
-            width: 800px;
+            width: 660px;
         }
 
         img {
-            width: auto;
-            height: auto;
+            width: 640px;
+            height: 320px;
+            /* width: auto;
+            height: auto; */
         }
     </style>
 </head>
@@ -64,15 +66,15 @@
             <p>安装成功后电脑上会出现下面几个图标，下一步就可以对git进行首次使用前的配置。</p>
             <img src="./images/gitbash.png" alt="安装成功后电脑上会出现下面几个图标">
             <h3 class="sub_title">二，git的初始化</h3>
-            <p>在使用 Git进行代码管理之前，我们首先点击Git Bash图标对 Git 进行初始化配置。<br>
-                使用 Git 的第一件事就是设置你的名字和 email，这些就是你在提交 commit 时的签名，<br>每次提交记录里都会包含这些信息。
+            <p>在使用 Git进行代码管理之前，我们首先点击Git Bash图标对 Git 进行初始化配置。
+                使用 Git 的第一件事就是设置你的名字和 email，这些就是你在提交 commit 时的签名，每次提交记录里都会包含这些信息。
                 使用git config 命令进行配置：</p>
             <img src="./images/gitconfig.png" alt="git初始化配置">
-            <p>执行了上面的命令后，会在用户文件夹目录（C:\Users\...）下建立一个叫 .gitconfig 的文件（该文件为隐藏文件）。<br>
+            <p>执行了上面的命令后，会在用户文件夹目录（C:\Users\...）下建立一个叫 .gitconfig 的文件（该文件为隐藏文件）。
                 内容一般像下面这样，Windows中可以使用记事本查看文件内容:</p>
             <img src="./images/gitconfigtxt.png" alt=".gitconfig 的文件">
             <p>上面的配置文件就是 Git 全局配置的文件，一般配置方法是 git config --global <配置名称>
-                    <配置的值>。<br>
+                    <配置的值>。
                         到此我们就完成了git软件的安装和初始化配置的工作，在接下来的文章里将介绍如何使用GitHub Pages搭建个人博客。</p>
         </article>
     </div>

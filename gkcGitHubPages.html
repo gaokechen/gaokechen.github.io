@@ -5,23 +5,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 设置页面自动刷新，方便修改代码后查看效果 -->
+    <!-- 每隔10秒刷新一次页面 -->
+    <meta http-equiv="refresh" content="10">
     <title>使用GitHub Pages搭建个人博客</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 600px;
+            height: 100%;
+        }
+
+        header,
+        footer {
+            height: 100px;
+            background-color: skyblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: none;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: flex-start;
+            background-color: antiquewhite;
+        }
+
+        article {
+            width: 660px;
+        }
+        img{
+            width: 640px;
+            height: 320px;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <h3>使用GitHub Pages搭建个人博客</h3>
+        <h1>使用GitHub Pages搭建个人博客</h1>
     </header>
-    <main>
+    <div class="content">
         <article>
             <p>如何动手搭建个人博客，比较复杂的方法是买一个云服务器再买一个域名还需要备案，这种方法费用较高。
-                其实每个GitHub账户都可以开一个自己的静态网站(域名为：username.github.io)非常简单且完全免费。
-                虽然静态网站有一些功能上的限制，但是依然可以实现个人博客的全部内容。</p>
+                其实每个GitHub账户都可以开一个自己的静态网站(域名:username.github.io)非常简单且完全免费。
+                虽然静态网站有一些功能上的限制，但是依然足够我们实现个人博客的全部内容。</p>
             <h3>第一步：注册一个GitHub账户</h3>
-            <p>打开<a href="https://github.com/">https://github.com</a>注册一个账号</p>
+            <p>首先打开<a href="https://github.com/">https://github.com</a>注册一个GitHub账号，注册成功后就可以登录。</p>
+            <img src="./images/githubregister.png" alt="注册一个GitHub账号">
+            <h3>第二步：创建一个新的仓库（repository）</h3>
+            <p>如图所示新建一个仓库</p>
+            <img src="./images/newrepository.png" alt="新建一个仓库">
+            <h3>第三步：填写博客域名（username.github.io)</h3>
+            <p>按照图片示例给自己的博客填写一个域名,由于我已经创建了gaokechen.github.io因此提示无法创建</p>
+            <img src="./images/createrepository.png" alt="填写博客域名">
         </article>
-    </main>
-
+    </div>
+    <!-- 页面底部 -->
+    <footer>
+        <p>软件1601 高克臣 20167457 2019-5-15 17852021881</p>
+    </footer>
 </body>
 
 </html>
