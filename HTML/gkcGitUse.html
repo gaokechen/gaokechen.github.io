@@ -6,19 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>在电脑上安装配置git</title>
+    <style>
+        body {
+            display: flex;
+            /* 显示为列 */
+            flex-direction: column;
+            min-height: 600px;
+            height: 100%;
+            /* font-size: 28px; */
+            /* font-weight: bolder; */
+        }
+
+        header,
+        footer {
+            height: 100px;
+            background-color: skyblue;
+            display: flex;
+            /* 水平方向子项的对齐和分布方式 */
+            justify-content: center;
+            /* flex子项们相对flex容器在垂直方向上的对齐方式 */
+            align-items: center;
+            flex: none;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: flex-start;
+            background-color: antiquewhite;
+        }
+
+        article {
+            width: 800px;
+        }
+
+        img {
+            width: auto;
+            height: auto;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <h3>安装配置git</h3>
+        <h1>安装配置git</h1>
     </header>
-    <main>
+    <div class="content">
         <article>
-            <h3>一，下载安装git</h3>
-            <p>打开链接<a href="https://git-scm.com/downloads"
-                    target="_blank">https://git-scm.com/downloads</a>选择对应操作系统的git软件包进行下载</p>
+            <h3 class="sub_title">一，下载安装git</h3>
+            <p>首先打开链接<a href="https://git-scm.com/downloads"
+                    target="_blank">https://git-scm.com/downloads</a>选择对应操作系统的git软件包进行下载。</p>
+            <img src="../images/gitdownload.png" alt="选择下载对应操作系统的git软件包">
+            <p>在安装包下载完成后打开进行安装，我选择的系统是Windows，打开后一直点击下一步直到安装成功即可。</p>
+            <img src="../images/gitinstall.png" alt="安装git软件">
+            <p>安装成功后电脑上会出现下面几个图标，下一步就可以对git进行首次使用前的配置。</p>
+            <img src="../images/gitbash.png" alt="安装成功后电脑上会出现下面几个图标">
+            <h3 class="sub_title">二，git的初始化</h3>
+            <p>在使用 Git进行代码管理之前，我们首先点击Git Bash图标对 Git 进行初始化配置。<br>
+                使用 Git 的第一件事就是设置你的名字和 email，这些就是你在提交 commit 时的签名，<br>每次提交记录里都会包含这些信息。
+                使用git config 命令进行配置：</p>
+            <img src="../images/gitconfig.png" alt="git初始化配置">
+            <p>执行了上面的命令后，会在用户文件夹目录（C:\Users\...）下建立一个叫 .gitconfig 的文件（该文件为隐藏文件）。<br>
+                内容一般像下面这样，Windows中可以使用记事本查看文件内容:</p>
+            <img src="../images/gitconfigtxt.png" alt=".gitconfig 的文件">
+            <p>上面的配置文件就是 Git 全局配置的文件，一般配置方法是 git config --global <配置名称>
+                    <配置的值>。<br>
+                        到此我们就完成了git软件的安装和初始化配置的工作，在接下来的文章里将介绍如何使用GitHub Pages搭建个人博客。</p>
         </article>
-    </main>
+    </div>
+    <!-- 页面底部 -->
+    <footer>
+        <p>软件1601 高克臣 20167457 2019-5-15 17852021881</p>
+    </footer>
 </body>
 
 </html>

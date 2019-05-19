@@ -5,73 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>高克臣的个人网站</title>
+    <title>高克臣的博客</title>
     <style>
-        /* 导航相关 */
-        nav {
-            /* 在左右两侧均不允许有浮动元素 */
-            clear: both;
+        html,
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 600px;
+            height: 100%;
         }
 
-        nav ul {
+        header,
+        footer {
+            height: 100px;
+            background-color: deepskyblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* align-content:flex-start; */
+            /* flex: none; */
+        }
+
+        nav,
+        ul {
+            /* height: 30px; */
             list-style: none;
-            background-color: white;
-            height: 30px;
-            padding-left: 0;
-            color: deepskyblue;
+            background-color: lightgrey;
         }
 
-        nav ul li {
-            width: 80px;
-            float: left;
-            line-height: 30px;
-            text-align: center;
-        }
-
-        nav ul li a {
+        nav ul li a:link,
+        a:visited {
             color: black;
-            /* 用于设置文本排版（下划线、顶划线、删除线或者闪烁）。下划线和顶划线修饰于文本的下部，删除线位于文本之上。 */
-            text-decoration: none;
+            font-size: 20px;
+            background-color: lightgrey;
         }
 
-        #left {
-            width: 700px;
-            float: left;
+        nav ul li a:hover {
+            color: black;
+            background-color: deepskyblue;
         }
 
-        #right {
-            width: 300px;
-            float: left;
-        }
-
-        /* #left section:nth-child(1) img{
-            width: 680px;
-            height: 300px;
-        } */
-
-        /* 左侧下部 */
-        #bottom header {
-            padding: 10px;
-        }
-
-        #bottom figure {
-            width: 640px;
-            height: 150px;
-        }
-
-        #bottom figure img {
-            clear: both;
-            width: 200px;
-            height: 150px;
-            float: left;
-            margin-left: -20px;
-            margin-right: 10px;
-        }
-
-        #bottom figure figcaption {
-            width: 400px;
-            height: 150px;
-            float: left;
+        .navContainer {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            align-content: center;
         }
     </style>
 </head>
@@ -79,28 +58,28 @@
 <body>
     <!-- 头部标题区域 -->
     <header>
-        <!-- <img src="../style/images/logo.png" alt="高克臣的个人网站"> -->
         <h1>
-            <span>高克臣的个人网站</span>
+            高克臣的博客
         </h1>
-        <p>欢迎光临高克臣的个人网站</p>
     </header>
     <!-- 导航菜单 -->
     <nav>
-        <ul>
+        <ul class="navContainer">
             <li><a href="gkcHomePage.html">首页</a></li>
             <li><a href="gkcPhoto.html">相册</a></li>
             <li><a href="gkcVideo.html">视频</a></li>
+            <li><a href="gkcTest.html">测试</a></li>
             <li><a href="gkcAbout.html">关于</a></li>
         </ul>
     </nav>
-    <div id="mainContent">
+    <div id="content">
         <div id="left">
             <!-- 表示文档中的一个区域（或节）。比如章节、页眉、页脚或文档中的其他部分，一般来说会包含一个标题 -->
             <section id="bottom">
                 <!-- figure元素规定独立的流内容（图像、图表、照片、代码等等）内容应该与主内容相关，但如果被删除，则不应对文档流产生影响-->
                 <figure>
-                    <a href="gkcGitHubPages.html"><img src="" alt="免费搭建个人博客"></a>
+                    <a href="gkcGitHubPages.html" target="_blank"><img src="../images/githubpages.jpg"
+                            alt="免费搭建个人博客"></a>
                     <figcaption>
                         <h3><a href="gkcGitHubPages.html" target="_blank" title="使用GitHubPages免费搭建个人博客">使用GitHub
                                 Pages免费搭建个人博客</a></h3>
@@ -109,22 +88,13 @@
                     </figcaption>
                 </figure>
                 <figure>
-                    <a href="#"><img src="" alt="免费搭建个人博客"></a>
+                    <a href="gkcGitUse.html" target="_blank"><img src="../images/gitlogo.png" alt="在电脑上安装配置git"></a>
                     <figcaption>
-                        <h3><a href="gkcGitHubPages.html" target="_blank" title="使用GitHubPages免费搭建个人博客">使用GitHub
-                                Pages免费搭建个人博客</a></h3>
-                        <p>今天这篇文章教大家如何通过GitHub Pages来免费搭建个人博客
-                            GitHub Pages是一种静态站点托管服务，不支持服务器端代码，如PHP，Ruby或Python。</p>
+                        <h3><a href="gkcGitUse.html" target="_blank" title="在电脑上安装配置git">在电脑上安装配置git</a></h3>
+                        <p>今天这篇文章教大家如何在Windows系统电脑上安装Git软件。</p>
                     </figcaption>
                 </figure>
             </section>
-
-        </div>
-        <div id="right">
-            <!-- 右边栏实现标签部分 -->
-            <aside>
-
-            </aside>
         </div>
     </div>
     <!-- 页面底部 -->
