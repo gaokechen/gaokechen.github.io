@@ -1,20 +1,106 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<meta name="Description" content="个人网站">
-	<meta name="Keywords" content="高克臣,个人网站">
-	<meta name="author" content="GaoKeChen">
-	<title>高克臣的个人网站</title>
-	<link href="HomePage.css" rel="stylesheet" type="text/css">
-	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>高克臣的博客</title>
+    <style>
+        html,
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 600px;
+            height: 100%;
+        }
+
+        header,
+        footer {
+            height: 100px;
+            background-color: deepskyblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* align-content:flex-start; */
+            /* flex: none; */
+        }
+
+        nav,
+        ul {
+            /* height: 30px; */
+            list-style: none;
+            background-color: lightgrey;
+        }
+
+        nav ul li a:link,
+        a:visited {
+            color: black;
+            font-size: 20px;
+            background-color: lightgrey;
+        }
+
+        nav ul li a:hover {
+            color: black;
+            background-color: deepskyblue;
+        }
+
+        .navContainer {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            align-content: center;
+        }
+    </style>
 </head>
 
 <body>
-	<h2>
-	<a href="https://gaokechen.github.io/">首页</a>
-	<a href="ph01.html">第一章</a>
-	<a href="test.html">测试</a>
-	</h2>
+    <!-- 头部标题区域 -->
+    <header>
+        <h1>
+            高克臣的博客
+        </h1>
+    </header>
+    <!-- 导航菜单 -->
+    <nav>
+        <ul class="navContainer">
+            <li><a href="gkcHomePage.html">首页</a></li>
+            <li><a href="gkcPhoto.html">相册</a></li>
+            <li><a href="gkcVideo.html">视频</a></li>
+            <li><a href="gkcTest.html">测试</a></li>
+            <li><a href="gkcAbout.html">关于</a></li>
+        </ul>
+    </nav>
+    <div id="content">
+        <div id="left">
+            <!-- 表示文档中的一个区域（或节）。比如章节、页眉、页脚或文档中的其他部分，一般来说会包含一个标题 -->
+            <section id="bottom">
+                <!-- figure元素规定独立的流内容（图像、图表、照片、代码等等）内容应该与主内容相关，但如果被删除，则不应对文档流产生影响-->
+                <figure>
+                    <a href="gkcGitHubPages.html" target="_blank"><img src="../images/githubpages.jpg"
+                            alt="免费搭建个人博客"></a>
+                    <figcaption>
+                        <h3><a href="gkcGitHubPages.html" target="_blank" title="使用GitHubPages免费搭建个人博客">使用GitHub
+                                Pages免费搭建个人博客</a></h3>
+                        <p>今天这篇文章教大家如何通过GitHub Pages来免费搭建个人博客
+                            GitHub Pages是一种静态站点托管服务，不支持服务器端代码，如PHP，Ruby或Python。</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <a href="gkcGitUse.html" target="_blank"><img src="../images/gitlogo.png" alt="在电脑上安装配置git"></a>
+                    <figcaption>
+                        <h3><a href="gkcGitUse.html" target="_blank" title="在电脑上安装配置git">在电脑上安装配置git</a></h3>
+                        <p>今天这篇文章教大家如何在Windows系统电脑上安装Git软件。</p>
+                    </figcaption>
+                </figure>
+            </section>
+        </div>
+    </div>
+    <!-- 页面底部 -->
+    <footer>
+        <p>软件1601 高克臣 20167457 2019-5-15 17852021881</p>
+    </footer>
 </body>
+
 </html>
