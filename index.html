@@ -11,7 +11,6 @@
 
     <title>高克臣的博客</title>
     <style>
-        html,
         body {
             display: flex;
             flex-direction: column;
@@ -21,8 +20,8 @@
 
         header,
         footer {
+            background-image: url(./images/cloudbackground.jpg);
             height: 100px;
-            background-color: deepskyblue;
             display: flex;
             /* flex-direction: column; */
             justify-content: center;
@@ -35,14 +34,15 @@
         ul {
             /* height: 30px; */
             list-style: none;
-            background-color: lightgrey;
+            /* background-color: lightgrey; */
+            background-image: url(./images/sportbackground.png);
         }
 
         nav ul li a:link,
         a:visited {
             color: black;
             font-size: 20px;
-            background-color: lightgrey;
+            /* background-color: lightgrey; */
         }
 
         nav ul li a:hover {
@@ -57,8 +57,17 @@
             align-content: center;
         }
 
+        .content {
+            background-image: url(./images/sportbackground.png);
+        }
+
+        .left {
+            width: 1000px;
+        }
+
         .figuremain {
             display: flex;
+            align-items: center;
             /* align-content:stretch; */
         }
 
@@ -90,6 +99,19 @@
         <div class="left">
             <!-- 表示文档中的一个区域（或节）。比如章节、页眉、页脚或文档中的其他部分，一般来说会包含一个标题 -->
             <section class="bottom">
+                <figure class="figuremain">
+                    <a href="./gkcUseVsCodeAndGit.html" target="_blank"><img src="./images/Visual_Studio_Code.png"
+                            alt="在vsCode中使用Git软件"></a>
+                    <figcaption class="figuretext">
+                        <h3><a href="gkcGitUse.html" target="_blank" title="在电脑上安装配置git">第三篇：在vsCode中使用Git软件</a></h3>
+                        <p>今天这篇文章教大家如何在vsCode中使用Git软件。Visual Studio Code（简称VS Code）
+                            是一个由微软开发的，同时支持Windows、Linux和macOS系统且开放源代码的代码编辑器，
+                            它支持测试，并内置了Git版本控制功能，同时也具有开发环境功能，例如代码补全（类似于
+                            IntelliSense）、代码片段、和代码重构等，该编辑器支持用户个性化配置，
+                            例如改变主题颜色、键盘快捷方式等各种属性和参数，还在编辑器中内置了扩展程序管理的功能。</p>
+                    </figcaption>
+                </figure>
+
                 <!-- figure元素规定独立的流内容（图像、图表、照片、代码等等）内容应该与主内容相关，但如果被删除，则不应对文档流产生影响-->
                 <figure class="figuremain">
                     <a href="gkcGitHubPages.html" target="_blank"><img src="./images/githubpages.jpg"
@@ -101,6 +123,7 @@
                             GitHub Pages是一种静态站点托管服务，不支持服务器端代码，如PHP，Ruby或Python。</p>
                     </figcaption>
                 </figure>
+
                 <figure class="figuremain">
                     <a href="gkcGitUse.html" target="_blank"><img src="./images/gitlogo.png" alt="在电脑上安装配置git"></a>
                     <figcaption class="figuretext">
