@@ -1,12 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>在vsCode中使用Git软件</title>
+    <!-- 设置页面自动刷新，方便修改代码后查看效果 -->
+    <!-- 每隔10秒刷新一次页面 -->
+    <meta http-equiv="refresh" content="10">
+
+    <title>在vsCode中进行GitHub pages个人博客搭建</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        header,
+        footer {
+            height: 100px;
+            background-image: url(./images/cloudbackground.jpg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: flex-start;
+            background-image: url(./images/sportbackground.png);
+        }
+
+        article {
+            width: 660px;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <header>
+        <h1>在vsCode中进行GitHub pages个人博客搭建</h1>
+    </header>
+    <div class="content">
+        <article>
+            <p>今天这篇文章教大家如何在vsCode中使用Git软件。Visual Studio Code（简称VS
+                Code）是一个由微软开发的，同时支持Windows、Linux和macOS系统且开放源代码的代码编辑器，
+                它支持测试，并内置了Git版本控制功能，同时也具有开发环境功能，例如代码补全（类似于IntelliSense）、
+                代码片段、和代码重构等，该编辑器支持用户个性化配置，例如改变主题颜色、键盘快捷方式等各种属性和参数，
+                还在编辑器中内置了扩展程序管理的功能。
+            </p>
+            <h3>第一步：下载vsCode软件</h3>
+            <p>vsCode是微软开发的代码编辑器，我们可以打开官方网站<a href="https://code.visualstudio.com/"
+                    target="_blank">https://code.visualstudio.com/</a>进行下载。
+                <img src="./images/vsCodeDownload.png" alt="下载vsCode软件">
+            </p>
+            <h3>第二步：下载配置git软件</h3>
+            <p>在第一篇文章中已经介绍了git软件的安装和配置，本篇博客就不再重复介绍，具体可以参考<a href="./gkcGitUse.html">
+                    第一篇：在电脑上安装配置git</a>进行git软件的安装配置。</p>
+            <h3>第三步：在vsCode中使用git clone命令克隆远程仓库到本地进行修改</h3>
+            <p>打开vsCode使用快捷键Ctrl+shift+p打开命令面板输入git然后选择clone</p>
+            <img src="./images/gitclone.png" alt="打开命令面板输入git然后选择clone">
+            <p>打开我们之前创建的GitHub仓库，点击Clone or download按钮复制Clone with HTTPS的链接</p>
+            <img src="./images/gitclonecopy.png" alt="点击Clone or download按钮复制Clone with HTTPS的链接">
+            <p>将复制的链接填入之前的vsCode命令框中克隆远程存储库</p>
+            <img src="./images/gitcloneurl.png" alt="克隆远程存储库">
+            <p>克隆到本地的存储库可以进行修改</p>
+            <img src="./images/vsScreen.png" alt="克隆到本地的存储库">
+            <h3>第三步：提交修改到远程存储库</h3>
+            <p>当我们完成了网页的修改后如何将本地写好了的html等文件提交到远程存储库中。首先点击源代码管理点击对号输入</p>
+            <img src="./images/codemanager.png" alt="源代码管理">
+        </article>
+    </div>
+    <!-- 页面底部 -->
+    <footer>
+        <p>软件1601 高克臣 20167457 2019-5-15 17852021881</p>
+    </footer>
 </body>
+
 </html>
