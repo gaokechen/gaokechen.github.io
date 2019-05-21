@@ -1,0 +1,8 @@
+header,
+footer {
+    height: 100px;
+    background-image: url(../images/cloudbackground.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
