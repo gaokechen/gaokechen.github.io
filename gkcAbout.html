@@ -26,6 +26,15 @@
             justify-content: space-evenly;
             align-items: center;
         }
+
+        .content {
+            display: flex;
+            background-image: url(./images/sportbackground.png);
+        }
+
+        .left {
+            width: 1000px;
+        }
     </style>
 </head>
 
@@ -34,45 +43,51 @@
         <h1>关于我</h1>
     </header>
     <div class="content">
-        <figure class="figuremain">
-            <figcaption>
-                <h3>我的介绍</h3>
-                <img src="./images/headimg.jpg" alt="头像" class="headimg">
-            </figcaption>
-            <section>
-                <p>高克臣</p>
-                <p>22岁</p>
-                <p>学生，计算机科学与技术专业</p>
-                <p>17852021881</p>
-                <p>性别男，爱好女</p>
-            </section>
-        </figure>
+        <div class="left">
+            <figure class="figuremain">
+                <figcaption>
+                    <h3>我的介绍</h3>
+                    <img src="./images/headimg.jpg" alt="头像" class="headimg">
+                </figcaption>
+                <section>
+                    <p>高克臣</p>
+                    <p>22岁</p>
+                    <p>学生，计算机科学与技术专业</p>
+                    <p>17852021881</p>
+                    <p>性别男，爱好女</p>
+                </section>
+            </figure>
 
-        <figure class="figuremain">
-            <figcaption>
-                <h3>我的技能</h3>
-                <img src="./images/Java_logo.png" alt="java" class="headimg">
-                <p>java后端开发</p>
-            </figcaption>
-            <section>
-                <img src="./images/Android.png" alt="Android" class="headimg">
-            </section>
-        </figure>
+            <!-- <figure class="figuremain">
+                <figcaption>
+                    <h3>我的技能</h3>
+                    <img src="./images/Java_logo.png" alt="java" class="headimg">
+                    <p>java后端开发</p>
+                </figcaption>
+                <section>
+                    <img src="./images/Android.png" alt="Android" class="headimg">
+                </section>
+            </figure> -->
 
-        <figure class="figurechat">
-            <figcaption>
-                <h3>联系方式</h3>
-                <img src="./images/WeChat.jpg" alt="WeChat二维码" class="headimg">
-            </figcaption>
-            <section>
-                <p>WeChat:Gkk15994006741</p>
-                <p>QQ:1354100092</p>
-                <p>Gmail:gkc666888@gmail.com</p>
-            </section>
-        </figure>
+            <figure class="figurechat">
+                <figcaption>
+                    <h3>联系方式</h3>
+                    <img src="./images/WeChat.jpg" alt="WeChat二维码" class="headimg">
+                </figcaption>
+                <section>
+                    <p>WeChat:Gkk15994006741</p>
+                    <p>QQ:1354100092</p>
+                    <p>Gmail:gkc666888@gmail.com</p>
+                </section>
+            </figure>
+        </div>
+        <div class="right">
+            <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450
+                src="https://music.163.com/outchain/player?type=0&id=477872755&auto=1&height=430"></iframe>
+        </div>
     </div>
     <footer>
-        <p>软件1601 高克臣 20167457 2019-5-21 17852021881</p>
+        <p>本博客素材来自网络，如有侵权请联系我删除!</p>
     </footer>
 </body>
 
