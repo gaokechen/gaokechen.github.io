@@ -1,0 +1,54 @@
+.content {
+    background-image: url(../images/sportbackground.png);
+}
+
+#main {
+    width: 600px;
+    height: 600px;
+    background: white;
+    border: 2px solid gray;
+    /* 将这个div容器水平居中 */
+    margin: 0 auto;
+    /* 规定当内容溢出元素框时发生的事 */
+    overflow: hidden;
+}
+
+#con {
+    width: 100%;
+    height: 600px;
+    /* 规定元素的定位类型为相对定位 */
+    position: relative;
+    /* 隐藏最上层的行 */
+    top: -100px;
+    /* 边框会合并为一个单一的边框 */
+    border-collapse: collapse;
+}
+
+/* 行 */
+.row {
+    height: 100px;
+    width: 100%;
+}
+
+/* 一个块 */
+.cell {
+    height: 100px;
+    width: 100px;
+    /* 指定一个元素向左浮动 */
+    float: left;
+}
+
+.black {
+    background-color: black;
+}
+
+.start {
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    background: yellowgreen;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+}
